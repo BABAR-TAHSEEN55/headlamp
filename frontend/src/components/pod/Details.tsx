@@ -61,8 +61,8 @@ export function PodLogViewer(props: PodLogViewerProps) {
   const { item, onClose, open, ...other } = props;
   const [container, setContainer] = React.useState(getDefaultContainer());
   const [showPrevious, setShowPrevious] = React.useState<boolean>(false);
-  const [showTimestamps, setShowTimestamps] = React.useState<boolean>(true);
-  const [follow, setFollow] = React.useState<boolean>(true);
+  const [showTimestamps, setShowTimestamps] = React.useState<boolean>(false);
+  const [follow, setFollow] = React.useState<boolean>(false);
   const [prettifyLogs, setPrettifyLogs] = React.useState<boolean>(false);
   const [formatJsonValues, setFormatJsonValues] = React.useState<boolean>(false);
   const [hasJsonLogs, setHasJsonLogs] = React.useState<boolean>(false);
